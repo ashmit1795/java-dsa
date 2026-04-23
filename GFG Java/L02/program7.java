@@ -8,7 +8,7 @@ origin.
 
 import java.util.Scanner;
 
-public class program7 {
+class program7 {
     public static void main(String[] args) {
         int x, y;
         Scanner sc = new Scanner(System.in);

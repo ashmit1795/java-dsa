@@ -5,7 +5,7 @@ print the greatest of them.
 
 import java.util.Scanner;
 
-public class program8 {
+class program8 {
     public static void main(String[] args) {
         int a, b, c;
         Scanner sc = new Scanner(System.in);

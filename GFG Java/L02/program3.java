@@ -10,7 +10,7 @@ if number is not divisible by 5 or 3
 
 import java.util.Scanner;
 
-public class program3 {
+class program3 {
     public static void main(String[] args) {
         int n;
         Scanner sc = new Scanner(System.in);

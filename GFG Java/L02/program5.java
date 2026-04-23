@@ -5,7 +5,7 @@ magnitude is smaller than 69 or not.
 
 import java.util.Scanner;
 
-public class program5 {
+class program5 {
 
     public static void main(String[] args) {
         int x;

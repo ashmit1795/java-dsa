@@ -5,7 +5,7 @@ tell if it is a four digit number or not.
 
 import java.util.Scanner;
 
-public class program4 {
+class program4 {
     public static void main(String[] args) {
         int x;
         Scanner sc = new Scanner(System.in);

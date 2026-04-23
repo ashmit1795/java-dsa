@@ -8,7 +8,7 @@ made or loss he incurred.
 
 import java.util.Scanner;
 
-public class program2 {
+class program2 {
     public static void main(String[] args) {
         double costPrice, sellingPrice;
         Scanner sc = new Scanner(System.in);
