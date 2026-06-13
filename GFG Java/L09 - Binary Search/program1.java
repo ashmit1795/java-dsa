@@ -21,7 +21,8 @@ class program1 {
         System.out.print("Enter target element: ");
         int target = sc.nextInt();
 
-        int found = binarySearch(arr, target);
+        // int found = binarySearch(arr, target);
+        int found = recursiveBinarySearch(arr, 0, n - 1, target);
         if (found == -1) {
             System.out.println("Target element not found.");
         } else {
@@ -42,6 +43,23 @@ class program1 {
                 low = mid + 1;
             } else if (arr[mid] > target) {
                 high = mid - 1;
+            }
+        }
+
+        return -1;
+    }
+
+    // Recursive binary search
+    static int recursiveBinarySearch(int[] arr, int low, int high, int target) {
+        if (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (arr[mid] == target)
+                return mid;
+
+            if (arr[mid] < target) {
+                return recursiveBinarySearch(arr, mid + 1, high, target);
+            } else {
+                return recursiveBinarySearch(arr, low, mid - 1, target);
             }
         }
 
